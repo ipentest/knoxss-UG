@@ -74,6 +74,8 @@ Easiest way is to use any interception proxy such as [Burp Suite] (https://ports
 
 Tool author @brutelogic's comment: A log feature is being implemented, it will not contain this info in the first release but will come in future developments. To be sure there's no XSS, you can check target manually 
 
+You can always see the requests with burp or which ever proxy you use this is handy to see what response knoxss has provided.
+
 ***FOUR:*** What happens when the number of users performing the scans go up?
 
 Server will hang if the CPU reaches 100% for sustained periods (several seconds). Currently it doesn't pass 30% even with the heaviest concurrent load. 
@@ -81,6 +83,9 @@ Server will hang if the CPU reaches 100% for sustained periods (several seconds)
 ***FIVE:*** When I asked @brutelogic " I tried using KnoXSS on some of the sites which have been shown as vulnerable on the [Open Bug Bounty] (https://openbugbounty.org) site, but Knoxss was unable to detect them... So want to know what mistake I was doing
 
 Please ask @RandomRobbie, several of his findings with KNOXSS ended up as submissions there. You might be doing something wrong, KNOXSS can find almost all the simple cases featuring in openbubounty.org
+
+Always check the full paremeters have been sent via knoxss plugin if not re test the site and ensure you provide knoxss with the cookies and the CRSF tokens if there are any.
+
 **Will ask @RandomRobbie and add the answers here**
 
 ***SIX:*** You say there's some challenge the author of KnoXSS is facing with the Firefox Add-on (the XPI file)... If everything is working fine in Pro version shouldn't it also work the same on the XPI?
