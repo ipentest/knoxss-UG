@@ -59,14 +59,17 @@ The ***Cookie: and Referer: headers*** to be pasted here, so in our case, it wil
 Referer: https://someurl.com/app/login.jsp?TYPE=33554433&REALMOID=06-00045ffb-9d34-1d53-ba41-024a0a174072&GUID=&SMAUTHREASON=0&METHOD=GET&SMAGENTNAME=-SM-c0YcVaq2Y%2fJgCFwUxzl%2bFjGUYRdw1odmO6FnFo8ALHEWVne0mzqAGJ5gcfrpupN1&TARGET=-SM-https%3a%2f%2fs2b%2esomeurl%2ecom%2fapp%2fcore%2ehomepage%2eshow%2eevent
 Cookie: BD1=14846538758084658965091235329142; BD2=14846538758095410991436877103468; javax.servlet.http.Cookie@61466146=""; javax.servlet.http.Cookie@61a661a6=""; JSESSIONID=00012Fj5NP0q15MeH_T179VoQ9o:14bth2u81; WB_LANG=en; ak_bmsc=CA80C1C75F6B260FE672C9CA252C24FB3A1AB98B512B00006FA280585449566C~pl3yxbQlcdDrg0GYKOfEm4TgyyUM9KkeHpL2ktmiK8+6EFPThPTWbf2pQKhSzCZWLO2evhKPTjyfhYjTXddIv+tyUEn1k7Xvab2/yGIeGmBBTB1VCyQ5HjiT17iFebKSQ3nIP8QjWir217JCpydqyP/j3MzuZfChHZ0qqHoF2be8uYdyNRKQEoJ9tWNzwWI1z7B+yF4nEkOXZ9oolI0hCiwaH1/atMeWWYFaCJwvHPrZE=
 ```
+* If in doubt, paste the entire HTTP header into the AUTH Data field and check again
 
-***TWO:*** But how do I capture the POST request details to paste in Extra Data in the first place?
+* I personally feel that this window needs to be closed with a Save button rather than just clicking on the X at the top... However, please note clicking on the X does make the pasted values remain persistent
 
-I was wondering why you are not asking ;o) Well, you can use any interception proxy such as [Burp Suite] (https://portswigger.net/burp/download.html) or [Fiddler] (https://www.telerik.com/download/fiddler), intercept the request and paste that data here
+***TWO:*** But how do I capture the POST request to paste into *Extra Data* fields, in the first place?
+
+Easiest way is to use any interception proxy such as [Burp Suite] (https://portswigger.net/burp/download.html) or [Fiddler] (https://www.telerik.com/download/fiddler), intercept the request and paste that data into the fields
 
 ***THREE:*** Is there some way to know how many requests are being made by ***KnoXSS Pro***? I dont see any log, hence the question - this is especially important when the result says no XSS found
 
-A log feature is being implemented, it will not contain this info in the first release but will come in future developments. To be sure there's no XSS, you can check target manually 
+Tool author @brutelogic's comment: A log feature is being implemented, it will not contain this info in the first release but will come in future developments. To be sure there's no XSS, you can check target manually 
 
 ***FOUR:*** What happens when the number of users performing the scans go up?
 
@@ -79,7 +82,6 @@ Please ask @RandomRobbie, several of his findings with KNOXSS ended up as submis
 
 ***SIX:*** You say there's some challenge the author of KnoXSS is facing with the Firefox Add-on (the XPI file)... If everything is working fine in Pro version shouldn't it also work the same on the XPI?
 
-Author, @brutelogic's concern: The Add-on is currently facing several implementation challenges due to Mozilla's API. Even if using the Add-on to just send targets to KNOXSS to test them, it's advised to (re)test using the main interface. 
+Tool author @brutelogic's concern: The Add-on is currently facing several implementation challenges due to Mozilla's API. Even if using the Add-on to just send targets to KNOXSS to test them, it's advised to (re)test using the main interface. 
 
-This is a work in progress and things will keep changing with the tool's maturity
-
+This git is a work in progress and things will keep changing with the tool's maturity... So dont forget to Star and Watch
