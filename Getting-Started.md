@@ -49,7 +49,9 @@ _gid=groupkk&_uid=userkk&langid=en
 For the above example, when I click on the *Extra Data* button, this is what I would need to paste:
 
 ***POST Data:***
-```_gid=groupkk&_uid=userkk&langid=en
+
+```
+_gid=groupkk&_uid=userkk&langid=en
 ```
 ***AUTH Data:***
 The ***Cookie: and Referer: headers*** to be pasted here, so in our case, it will be:
