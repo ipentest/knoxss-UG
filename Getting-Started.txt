@@ -1,0 +1,7 @@
+It's best to go ahead with the pro license which costs USD 107 per annum - this seems to be really reasonable since your very first XSS finding using this tool can give you the ROI
+
+Go to https://knoxss.me and register for a free account.. This will give you an idea of how you can use the online tool which is mostly a point and click types
+
+Once you've purchased Pro, next steps will be as follows:
+
+TBC
