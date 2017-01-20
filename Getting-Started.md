@@ -1,22 +1,28 @@
 **Bought KnoXSS, now what:**
 
-It's best to go ahead with the pro license which costs USD 107 per annum - this seems to be really reasonable since your very first XSS finding using this tool can give you the ROI
+I'm assuming you've procured the pro license which costs USD 107 per annum - This seems to be really reasonable since your very first XSS finding using this tool can give you the ROI
 
-Go to https://knoxss.me and register for a free account.. This will give you an idea of how you can use the online tool which is mostly a point and click types
+If you're still thinking about procuring, first go to [KnoXSS] (https://knoxss.me) and register for a free account.. This will give you an idea of how you can use the online tool which is mostly a **point and click** type
 
-Once you've purchased Pro, next steps will be as follows:
+You can try some [sample sites] (http://brutelogic.com.br/knoxss.html) and see whether KnoXSS finds any XSSes there... Once you're satisfied, may be you wanna' get the pro?
 
-Testing the Waters:
+Once you've got Pro:
 
-1. Go to https://knoxss.me/pro and login if prompted
-2. There are a few test pages to get yourselves acclamatized... This is a work in progress and is in the process of getting better... You can get this set of samples at http://brutelogic.com.br/knoxss.html
-3. Paste the provided sample URLs into the https://knoxss.me/pro site
+**Testing the Waters:**
 
-<b>FUQs: (Frequently Unanswered Questions): </b>
+1. Go to [KnoXSS] (https://knoxss.me/pro) and login if prompted
+2. You can return back to the [test pages] (http://brutelogic.com.br/knoxss.html) to get yourselves acclamatized... This is a work in progress...  
+3. Paste the provided sample URLs into the [KnoXSS] (https://knoxss.me/pro) site
 
-ONE: What should be in "Extra Data" for POST requests
+**Using the XPI - Firefox Extension**
 
-Let's say we want to scan http://someurl.com for XSS using KnoXSS tool at https://knoxss.me/pro... Let's say this is a POST request with the following as the full request:
+TBD
+
+**FUQs: (Frequently Unanswered Questions): **
+
+***ONE:*** What should be in "Extra Data" for POST requests
+
+Let's say we want to scan **http://someurl.com** for XSS using [KnoXSS tool] (https://knoxss.me/pro)... Let's say this is a POST request with the following as the full request:
 ***Start***
 
 POST /app/core.security.login.event HTTP/1.1
