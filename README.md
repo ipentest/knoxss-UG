@@ -82,11 +82,26 @@ Server will hang if the CPU reaches 100% for sustained periods (several seconds)
 
 ***FIVE:*** When I asked @brutelogic " I tried using KnoXSS on some of the sites which have been shown as vulnerable on the [Open Bug Bounty] (https://openbugbounty.org) site, but Knoxss was unable to detect them... So want to know what mistake I was doing
 
+**My Meeting With Robbie**
+
 Please ask @RandomRobbie, several of his findings with KNOXSS ended up as submissions there. You might be doing something wrong, KNOXSS can find almost all the simple cases featuring in openbubounty.org
 
-Always check the full paremeters have been sent via knoxss plugin if not re test the site and ensure you provide knoxss with the cookies and the CRSF tokens if there are any.
+I sent out a request to @RandomRobbie to help out at his convenience and you know what, I received more than I asked for, all within the next 2 minutes!! Wow, the infosec community never ceases to surprise me... Everyone is so eager to share and have so much to as well!! 
 
-**Will ask @RandomRobbie and add the answers here**
+Inputs from @RandomRobbie: **Always check the full paremeters have been sent via knoxss plugin if not re test the site and ensure you provide knoxss with the cookies and the CRSF tokens if there are any. **
+
+Some more inputs from him during our discussion: (Pasted straight from Twitter DM)
+
+_ one main thing i do with knoxss is ensure it's ran via burp so i can see the response from knoxss as sometimes knoxss does flake out with a 404 if the url has too many parameters or is taking ages to respond
+_ another one with knoxss is if the firefox plugin does not detect something manual on the main page is always advised and ensuring cookies and CSRF tokens are put in
+_ i have found in the past some sites it really does not like and thats something i am trying to work on before i pass to brute to see if he can resolve
+_ if you put a manual XSS in that does not fire the extention will fire this to knoxss and fail due to his WAF
+_ the way i have it set up is my firefox goes via burp and you can see the requests from knoxss plugin
+_ **sometimes you need to sign in to knoxss as the addon isnt always working**
+_ the firefox plugin is just doing a POST to the knoxss website
+
+
+
 
 ***SIX:*** You say there's some challenge the author of KnoXSS is facing with the Firefox Add-on (the XPI file)... If everything is working fine in Pro version shouldn't it also work the same on the XPI?
 
