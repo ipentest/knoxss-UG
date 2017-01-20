@@ -1,5 +1,9 @@
-# knoxss-UG
+# knoXSS User Guide
+
 Documentation for knoXSS tool by @brutelogic
+
+Special thanks to @Random_Robbie for his inputs
+
 
 **Bought KnoXSS, Now What:**
 
@@ -92,15 +96,19 @@ Inputs from @RandomRobbie: **Always check the full paremeters have been sent via
 
 Some more inputs from him during our discussion: (Pasted straight from Twitter DM)
 
-_ one main thing i do with knoxss is ensure it's ran via burp so i can see the response from knoxss as sometimes knoxss does flake out with a 404 if the url has too many parameters or is taking ages to respond
-_ another one with knoxss is if the firefox plugin does not detect something manual on the main page is always advised and ensuring cookies and CSRF tokens are put in
-_ i have found in the past some sites it really does not like and thats something i am trying to work on before i pass to brute to see if he can resolve
-_ if you put a manual XSS in that does not fire the extention will fire this to knoxss and fail due to his WAF
-_ the way i have it set up is my firefox goes via burp and you can see the requests from knoxss plugin
-_ **sometimes you need to sign in to knoxss as the addon isnt always working**
-_ the firefox plugin is just doing a POST to the knoxss website
+- One main thing I do with knoxss is ensure **it's ran via burp** so i can see the response from knoxss as sometimes knoxss does flake out with a 404 if the url has too many parameters or is taking ages to respond
 
+- Another one with knoxss is if the firefox plugin does not detect any thing, **a manual check on the main page is always advised and ensuring cookies and CSRF tokens are put in**
 
+- I have found in the past that some sites really dont like KnoXSS and thats something i am trying to work on
+
+- If you put a manual XSS in that did not fire, the extension will fire this to knoxss and fail due to the WAF
+
+- The way I have it set up is my firefox goes via burp and you can see the requests from knoxss plugin
+
+- **sometimes you need to sign in to knoxss as the addon isnt always working**
+
+- The firefox plugin is just doing a POST to the knoxss website
 
 
 ***SIX:*** You say there's some challenge the author of KnoXSS is facing with the Firefox Add-on (the XPI file)... If everything is working fine in Pro version shouldn't it also work the same on the XPI?
