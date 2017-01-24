@@ -1,37 +1,63 @@
-**...A Quick Start Guide...**
+** Quick Start...**
 
-1. Go to https://knoxss.me/pro and login with FF if planning to use the plugin
-2. Now you can start the plugin which will send a request to the [above URL] (https://knoxss.me/pro) to ensure you are a pro user and then switch to ON
-3. It's ideal to pass your requests through Burp or ZAP to ensure the XPI is actually behaving in an intended way
-4. If not successful through XPI, try with [Pro] (https://knoxss.me/pro) and try out some trial and error Extra Data (this depends on the application as to what is being used for Auth Data)
+1. Go to [KnoXSS site] (https://knoxss.me/pro) and login
+
+2. Download the FF plugin
+
+3. Keep your account logged in at all times in FF
+
+4. Now start the XPI plugin and switch to ON for the target site
+
+5. It's ideal to pass your XPI requests through Burp or ZAP to ensure the XPI is actually behaving in an intended way (headers not truncated or misplaced etc)
+
+6. If not successful through XPI to get a XSS popup, try with the [Pro] (https://knoxss.me/pro) directly and try out some trial and error Extra Data (this depends on what is being used by the application towards Auth Data)
+
  
 # knoXSS User Guide
 
-Documentation for knoXSS tool by @brutelogic
+***KnoXSS is an automated XSS scanner with PoC response by @brutelogic. This documentation is a User Guide for KnoXSS***
 
-Special thanks to @Random_Robbie for his inputs
+***Special thanks to @Random_Robbie for his inputs***
+
 
 
 **Bought KnoXSS, Now What:**
 
-I'm assuming you've procured the pro license which costs USD 107 per annum - This seems to be really reasonable since your very first XSS finding using this tool can give you the ROI
+I'm assuming you've procured the pro license - This seems to be the best bet just like Burp Suite Pro, 'cos your very first XSS using this tool might be your ROI
 
-If you're still thinking about procuring, first go to [KnoXSS] (https://knoxss.me) and register for a free account.. This will give you an idea of how you can use the online tool which is mostly a **point and click** type
+However, if you're still thinking about procuring KnoXSS, first go to [KnoXSS] (https://knoxss.me) and register for a free account.. Using the free version will give you a good idea of how you can use the online tool effectively... It's a mostly self-explanatory **point and click** type of tool
 
 You can try some [sample sites] (http://brutelogic.com.br/knoxss.html) and see whether KnoXSS finds any XSSes there... Once you're satisfied, may be you wanna' get the pro?
 
-
 Once you've got Pro:
+
+
 
 **Testing the Waters:**
 
 1. Go to [KnoXSS] (https://knoxss.me/pro) and login if prompted
+
 2. You can return back to the [test pages] (http://brutelogic.com.br/knoxss.html) to get yourselves acclamatized... Please be aware that the [test pages] (http://brutelogic.com.br/knoxss.html) are a work in progress...  
+
 3. Paste the provided sample URLs into the [KnoXSS] (https://knoxss.me/pro) site
+
+
 
 **Using the XPI - Firefox Extension**
 
-TBD
+1. Go to [KnoXSS site] (https://knoxss.me/pro) and login
+
+2. Download the FF plugin
+
+3. Keep your account logged in at all times in FF
+
+4. Now start the XPI plugin and switch to ON for the target site
+
+5. It's ideal to pass your XPI requests through Burp or ZAP to ensure the XPI is actually behaving in an intended way (headers not truncated or misplaced etc)
+
+6. If not successful through XPI to get a XSS popup, try with the [Pro] (https://knoxss.me/pro) directly and try out some trial and error Extra Data (this depends on what is being used by the application towards Auth Data)
+
+
 
 
 
