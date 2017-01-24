@@ -1,3 +1,10 @@
+**...A Quick Start Guide...**
+
+1. Go to https://knoxss.me/pro and login with FF if planning to use the plugin
+2. Now you can start the plugin which will send a request to the [above URL] (https://knoxss.me/pro) to ensure you are a pro user and then switch to ON
+3. It's ideal to pass your requests through Burp or ZAP to ensure the XPI is actually behaving in an intended way
+4. If not successful through XPI, try with [Pro] (https://knoxss.me/pro) and try out some trial and error Extra Data (this depends on the application as to what is being used for Auth Data)
+ 
 # knoXSS User Guide
 
 Documentation for knoXSS tool by @brutelogic
